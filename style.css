@@ -76,10 +76,10 @@ p { margin: 0%; }
 
 .navigation {
   max-width: 1000px;
-  background-color: #1c1a19;
+  background-color: #3c3a39;
   display: flex;
   align-items: center;
-  padding: 0% 5%;
+  padding: 2% 5%;
 }
 
 .navigation img {
