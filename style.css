@@ -54,13 +54,13 @@ body { margin: 0%; }
 
 .l-height-44 { line-height: 44.67px; }
 
-.l-height-42 { line-height: 44px; }
+.l-height-43 { line-height: 44px; }
 
 .l-height-42 { line-height: 42.67px; }
 
-.backorange{ background-color: #ff6b00;}
+.backorange { background-color: #ff6b00; }
 
-.white-1 { color: #fff5E1; }
+.white-1 { color: #fff5e1; }
 
 .white-2 { color: #fff; }
 
@@ -70,7 +70,7 @@ body { margin: 0%; }
 
 .social img { height: 20px; }
 
-p { margin: 0% }
+p { margin: 0%; }
 
 .social li { list-style: none; }
 
@@ -149,18 +149,14 @@ a {
   line-height: 20px;
 }
 
-a:hover {
-  background: rgb(43, 43, 156, .2);
-}
+a:hover { background: rgb(43, 43, 156, .2); }
 
 .center {
   justify-self: center;
   margin: 5% 0%;
 }
 
-.works p {
-  margin: 1% 0%;
-}
+.works p { margin: 1% 0%; }
 
 .buttonproject a{
   background-color: #ff6b00;
@@ -170,6 +166,4 @@ a:hover {
   padding: 2% 4%;
 }
 
-.buttonproject a:hover{
-  background-color:#e05304;
-}
+.buttonproject a:hover{ background-color:#e05304; }
