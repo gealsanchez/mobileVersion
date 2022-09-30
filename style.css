@@ -149,7 +149,7 @@ a {
   line-height: 20px;
 }
 
-a:hover { background: rgb(43, 43, 156, .2); }
+a:hover { background: rgb(43, 43, 156, 0.2); }
 
 .center {
   justify-self: center;
@@ -158,7 +158,7 @@ a:hover { background: rgb(43, 43, 156, .2); }
 
 .works p { margin: 1% 0%; }
 
-.buttonproject a{
+.buttonproject a {
   background-color: #ff6b00;
   margin: 1% 0%;
   text-decoration: none;
@@ -166,4 +166,4 @@ a:hover { background: rgb(43, 43, 156, .2); }
   padding: 2% 4%;
 }
 
-.buttonproject a:hover{ background-color:#e05304; }
+.buttonproject a:hover { background-color: #e05304; }
