@@ -212,8 +212,6 @@ a:hover { background: rgb(43, 43, 156, 0.2); }
   padding: 2% 4%;
 }
 
-.buttonproject-1 a:hover { background-color: #e05304; }
-
 .buttonproject a {
   background-color: #ff6b00;
   margin: 1% 0%;
@@ -223,6 +221,8 @@ a:hover { background: rgb(43, 43, 156, 0.2); }
 }
 
 .buttonproject a:hover { background-color: #e05304; }
+
+.buttonproject-1 a:hover { background-color: #e05304; }
 
 .about {
   background-image: url("img/illustration-about-me-mobile.png");
