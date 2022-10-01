@@ -162,18 +162,6 @@ a {
   justify-content: space-between;
 }
 
-.project a {
-  margin: 3% 0%;
-  color: #1c1a19;
-  text-decoration: none;
-  border: 1px solid black;
-  padding: 3% 4%;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-}
-
 .project-1 a {
   border: none;
   background-color: rgb(255, 255, 255, 0.24);
@@ -186,10 +174,25 @@ a {
   line-height: 20px;
 }
 
+.project a {
+  margin: 3% 0%;
+  color: #1c1a19;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 3% 4%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .project-1 ul {
+  list-style: none;
   margin-top: 5%;
   justify-content: flex-start;
 }
+
+.project-2 ul { padding: 0%; }
 
 a:hover { background: rgb(43, 43, 156, 0.2); }
 
@@ -200,6 +203,17 @@ a:hover { background: rgb(43, 43, 156, 0.2); }
 
 .works p { margin: 1% 0%; }
 
+.buttonproject-1 a {
+  width: 82.1%;
+  background-color: #ff6b00;
+  margin: -15% 5% 20% 5%;
+  text-decoration: none;
+  border: none;
+  padding: 2% 4%;
+}
+
+.buttonproject-1 a:hover { background-color: #e05304; }
+
 .buttonproject a {
   background-color: #ff6b00;
   margin: 1% 0%;
@@ -209,17 +223,6 @@ a:hover { background: rgb(43, 43, 156, 0.2); }
 }
 
 .buttonproject a:hover { background-color: #e05304; }
-
-.buttonproject-1 a {
-  width: 82%;
-  background-color: #ff6b00;
-  margin: -15% 5% 20% 5%;
-  text-decoration: none;
-  border: none;
-  padding: 2% 4%;
-}
-
-.buttonproject-1 a:hover { background-color: #e05304; }
 
 .about {
   background-image: url("img/illustration-about-me-mobile.png");
