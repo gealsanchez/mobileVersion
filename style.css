@@ -134,9 +134,25 @@ p { margin: 5% 0%; }
 }
 
 .rule-2 {
-  margin: 0% 0% 15% 0%;
+  margin: 3% 0% 15% 0%;
   padding: 0%;
-  width: 85%;
+  width: 95%;
+  align-self: center;
+}
+
+.rule-3 {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  align-self: center;
+}
+
+.rule-4 {
+  width: 40%;
+  background: #1c1a19;
+  border: 1px solid black;
+  border-radius: 7px 7px 7px 7px;
+  height: 2px;
   align-self: center;
 }
 
@@ -189,7 +205,7 @@ a {
 .project-1 ul {
   list-style: none;
   margin-top: 5%;
-  justify-content: flex-start;
+  display: inline;
 }
 
 .project-2 ul { padding: 0%; }
@@ -206,7 +222,7 @@ a:hover { background: rgb(43, 43, 156, 0.2); }
 .buttonproject-1 a {
   width: 82.1%;
   background-color: #ff6b00;
-  margin: -15% 5% 20% 5%;
+  margin: -15% 5% 10% 5%;
   text-decoration: none;
   border: none;
   padding: 2% 4%;
@@ -246,7 +262,7 @@ a:hover { background: rgb(43, 43, 156, 0.2); }
 
 .language ul {
   margin: 0%;
-  padding: 0%;
+  padding: 0% 0% 20% 0%;
   list-style: none;
   font-family: 'Inter', sans-serif;
   color: #fff;
@@ -255,6 +271,54 @@ a:hover { background: rgb(43, 43, 156, 0.2); }
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact {
+  max-width: 1000px;
+  padding: 5%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact button {
+  margin-top: 10%;
+  margin-bottom: 30%;
+  background-color: #ff6b00;
+  border: none;
+  padding: 5% 2%;
+  width: 50%;
+  align-self: center;
+}
+
+.contact button:hover { background-color: #e05304; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+input { border: none; }
+
+textarea {
+  background-color: #e9e5e3;
+  width: 100%;
+  height: 100px;
+  border: none;
+}
+
+.contact p {
+  padding: 20% 0%;
+  text-align: center;
+}
+
+.gray { filter: invert(27%) sepia(5%) saturate(591%) hue-rotate(163deg) brightness(96%) contrast(87%); }
+
+footer .social {
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 0%;
 }
 
 .languages li { padding: 1%; }
