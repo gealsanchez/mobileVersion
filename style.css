@@ -472,8 +472,8 @@ footer .social {
 .languages li {
   padding: 1%;
 }
-@media (min-width: 764px) and (max-width: 1368px) {
 
+@media (min-width: 764px) and (max-width: 1368px) {
   .navigation {
     max-width: 1368px;
     padding: 0.5% 2%;
