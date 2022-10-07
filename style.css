@@ -250,7 +250,7 @@ p {
 .rule-4 {
   width: 40%;
   background: #1c1a19;
-  border: 1px solid black;
+  border: 1px solid #0d151e;
   border-radius: 7px 7px 7px 7px;
   height: 2px;
   align-self: center;
@@ -460,7 +460,7 @@ textarea {
 }
 
 .gray {
-  filter: invert(27%) sepia(5%) saturate(591%) hue-rotate(163deg) brightness(96%) contrast(87%);
+  filter: invert(100%) sepia(5%) saturate(591%) hue-rotate(163deg) brightness(96%) contrast(87%);
 }
 
 footer .social {
@@ -574,6 +574,26 @@ footer .social {
     margin-right: 3%;
   }
 
+  .webitem-2 .buttonproject-1 {
+    display: none;
+  }
+
+  .webitem-3 .buttonproject-1 {
+    display: none;
+  }
+
+  .webitem-4 .buttonproject-1 {
+    display: none;
+  }
+
+  .webitem-5 .buttonproject-1 {
+    display: none;
+  }
+
+  .webitem-6 .buttonproject-1 {
+    display: none;
+  }
+
   .works .description,
   .project,
   .buttonproject {
@@ -650,29 +670,54 @@ footer .social {
     color: transparent;
   }
 
+  .webitem-2 h1 {
+    padding-top: 35%;
+  }
+
+  .webitem-3 h1 {
+    padding-top: 35%;
+  }
+
+  .webitem-4 h1 {
+    padding-top: 35%;
+  }
+
+  .webitem-5 h1 {
+    padding-top: 35%;
+  }
+
+  .webitem-6 h1 {
+    padding-top: 35%;
+  }
+
   .desktopversion .webitem-2 .project-1 {
     background-image: url("img/Img\ Placeholder-2.png");
     background-size: auto;
+    padding-bottom: 1%;
   }
 
   .desktopversion .webitem-3 .project-1 {
     background-image: url("img/Img\ Placeholder-3.png");
     background-size: auto;
+    padding-bottom: 1%;
   }
 
   .desktopversion .webitem-4 .project-1 {
     background-image: url("img/Img\ Placeholder-4.png");
     background-size: auto;
+    padding-bottom: 1%;
   }
 
   .desktopversion .webitem-5 .project-1 {
     background-image: url("img/Img\ Placeholder-2.png");
     background-size: auto;
+    padding-bottom: 1%;
   }
 
   .desktopversion .webitem-6 .project-1 {
     background-image: url("img/Img\ Placeholder-3.png");
     background-size: auto;
+    padding-bottom: 1%;
   }
 
   .about {
@@ -750,6 +795,13 @@ footer .social {
     border-radius: 7px 7px 7px 7px;
     margin: 0%;
     padding: 0%;
+  }
+
+  .rule-5 {
+    margin: 3% 0% 5% 0%;
+    padding: 0%;
+    width: 100%;
+    align-self: center;
   }
 
   footer .social {
