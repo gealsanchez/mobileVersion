@@ -600,6 +600,38 @@ footer .social {
     column-gap: 2%;
   }
 
+  .about p {
+    width: 40%;
+    margin: 0%;
+    padding: 2% 0% 2% 5%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about h1 {
+    margin-bottom: 0%;
+    padding-left: 5%;
+  }
+
+  .about .buttonproject {
+    margin-left: 0%;
+    padding-left: 5%;
+  }
+
+  .language li {
+    margin-bottom: 4%;
+  }
+
+  .contact p {
+    padding: 0%;
+    width: 40%;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
   .desktopversion .webitem-1 .project-1 {
     background-image: url("img/Img\ Placeholder-1.png");
     background-size: auto;
@@ -656,24 +688,6 @@ footer .social {
     padding-bottom: 5%;
   }
 
-  .about p {
-    width: 40%;
-    margin: 0%;
-    padding: 2% 0% 2% 5%;
-    font-size: 20px;
-    line-height: 32px;    
-  }
-
-  .about h1 {
-    margin-bottom: 0%;
-    padding-left: 5%;
-  }
-
-  .about .buttonproject {
-    margin-left: 0%;
-    padding-left: 5%;
-  }
-
   .languages {
     max-width: 1368px;
     padding-bottom: 0%;
@@ -701,10 +715,6 @@ footer .social {
     margin-right: 3%;
   }
 
-  .language li {
-    margin-bottom: 4%;
-  }
-
   .contact {
     flex-direction: row;
     padding: 10%;
@@ -714,16 +724,6 @@ footer .social {
     margin: 3% 0% 7% 0%;
     padding: 0%;
     width: 85%;
-  }
-
-  .contact p {
-    padding: 0%;
-    width: 40%;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
   }
 
   .contact form {
@@ -761,5 +761,4 @@ footer .social {
     width: 30%;
     padding-left: 30%;
   }
-
 }
