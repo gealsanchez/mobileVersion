@@ -328,6 +328,7 @@ a {
 
 .project-1 h1 {
   padding-top: 20%;
+  margin-bottom: 0%;
 }
 
 .project-2 {
@@ -350,10 +351,6 @@ a:hover {
   padding: 2% 4%;
 }
 
-.buttonproject a:hover {
-  background-color: #e05304;
-}
-
 .buttonproject-1 a {
   width: 103.1%;
   background-color: #ff6b00;
@@ -368,12 +365,12 @@ a:hover {
   line-height: 24px;
 }
 
-.buttonproject-1 a:hover {
+.buttonproject a:hover {
   background-color: #e05304;
 }
 
-.project-1 h1 {
-  margin-bottom: 0%;
+.buttonproject-1 a:hover {
+  background-color: #e05304;
 }
 
 .about {
