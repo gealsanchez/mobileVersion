@@ -657,19 +657,6 @@ footer .social {
     color: transparent;
   }
 
-  .desktopversion .webitem-1 h1 {
-    color: transparent;
-  }
-
-  .desktopversion .webitem-1 .project-2 a {
-    color: transparent;
-    background-color: transparent;
-  }
-
-  .desktopversion .webitem-1 .project-2 li {
-    color: transparent;
-  }
-
   .webitem-2 h1 {
     padding-top: 35%;
   }
@@ -688,6 +675,19 @@ footer .social {
 
   .webitem-6 h1 {
     padding-top: 35%;
+  }
+
+  .desktopversion .webitem-1 h1 {
+    color: transparent;
+  }
+
+  .desktopversion .webitem-1 .project-2 a {
+    color: transparent;
+    background-color: transparent;
+  }
+
+  .desktopversion .webitem-1 .project-2 li {
+    color: transparent;
   }
 
   .desktopversion .webitem-2 .project-1 {
