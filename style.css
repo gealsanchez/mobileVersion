@@ -136,6 +136,10 @@ body {
   color: #1c1a19;
 }
 
+.social img:hover {
+  transform: scale(1.2);
+}
+
 .social img {
   height: 20px;
 }
@@ -166,6 +170,18 @@ p {
   margin-left: auto;
   align-self: center;
   opacity: 0.7;
+}
+
+.navigation a{
+  transition: all 0.5s ease-out;
+}
+
+.navigation a:hover{
+  letter-spacing: 3px;
+  word-spacing: 0.3em;
+  font-size: 32px;
+  transform: translate(3ch, 3mm);
+  font-family: 'Crete Round', serif;
 }
 
 .desktopmenu ul {
@@ -306,6 +322,7 @@ a {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  transition: all 0.5s ease-out;
 }
 
 .project a {
@@ -318,6 +335,7 @@ a {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  transition: all 0.5s ease-out;
 }
 
 .webitem {
