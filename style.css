@@ -495,6 +495,31 @@ footer .social {
   padding: 1%;
 }
 
+
+.open {
+  background-color: aqua;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.close {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  right: 2%;
+  padding: 8px;
+}
+
+
+
+
 @media (min-width: 764px) and (max-width: 1368px) {
   .navigation {
     max-width: 1368px;
