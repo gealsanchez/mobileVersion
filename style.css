@@ -517,8 +517,24 @@ footer .social {
   padding: 8px;
 }
 
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 106px;
+  padding-left: 28px;
+  gap: 40px;
+}
 
+.main-menu ul {
+  list-style: none;
+}
 
+.menu-item {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
 
 @media (min-width: 764px) and (max-width: 1368px) {
   .navigation {
