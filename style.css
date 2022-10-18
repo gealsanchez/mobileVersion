@@ -141,10 +141,8 @@ body {
 }
 
 .navigation img {
-  height: 30px;
   margin-left: auto;
-  align-self: center;
-  opacity: 0.7;
+  filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(78deg) brightness(108%) contrast(100%);
 }
 
 .social img:hover {
@@ -167,7 +165,7 @@ p {
   max-width: 1000px;
   background-color: #3c3a39;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 2% 5%;
 }
@@ -176,10 +174,6 @@ a {
   color: rgb(248, 246, 246);
   text-decoration: none;
   display: inline-block;
-}
-
-.navigation a {
-  transition: all 0.5s ease-out;
 }
 
 .project-1 a {
@@ -232,14 +226,6 @@ a:hover {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-}
-
-.navigation a:hover {
-  letter-spacing: 3px;
-  word-spacing: 0.3em;
-  font-size: 32px;
-  transform: translate(3ch, 3mm);
-  font-family: 'Crete Round', serif;
 }
 
 .desktopmenu ul {
@@ -346,6 +332,21 @@ a:hover {
   padding: 0%;
   width: 100%;
   align-self: center;
+}
+
+.rule-7 {
+  margin-top: -40%;
+  width: 40%;
+  background: #1c1a19;
+  border: 1px solid #050505;
+  border-radius: 7px 7px 7px 7px;
+  height: 2px;
+}
+
+.rule-8 {
+  width: 85%;
+  opacity: 0.7;
+  margin-bottom: 57%;
 }
 
 .social ul {
@@ -495,10 +496,8 @@ footer .social {
   padding: 1%;
 }
 
-
 .open {
-  background-color: aqua;
-  mix-blend-mode: multiply;
+  background-color: #1c1a19;
   backdrop-filter: blur(5px);
   position: fixed;
   left: 0;
@@ -509,31 +508,34 @@ footer .social {
 }
 
 .close {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   position: fixed;
   right: 2%;
   padding: 8px;
 }
 
-.main-menu {
-  display: flex;
-  flex-direction: column;
-  padding-top: 106px;
-  padding-left: 28px;
-  gap: 40px;
-}
-
-.main-menu ul {
-  list-style: none;
-}
-
-.menu-item {
+.dynaaa {
+  margin-top: 30%;
+  margin-left: 7%;
+  font-family: 'Inter', sans-serif;
   color: #fff;
-  font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 44px;
+  font-size: 32px;
+}
+
+.dynaab {
+  margin-top: 1%;
+  margin-left: 7%;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  line-height: 44px;
+  font-size: 32px;
+}
+
+.dynadiv {
+  height: 30vh;
+  background-color: #fff;
 }
 
 @media (min-width: 764px) and (max-width: 1368px) {
@@ -548,6 +550,10 @@ footer .social {
 
   .navigation a {
     padding-left: 9%;
+  }
+
+  .navigation img {
+    filter: invert(0%) sepia(1%) saturate(0%) hue-rotate(78deg) brightness(108%) contrast(100%);
   }
 
   .desktopmenu ul {
