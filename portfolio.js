@@ -10,6 +10,8 @@ cancel.addEventListener('click', () => {
   overlay.style.display = 'none';
 });
 
+// The links so it go back to main page. 
+
 const dynaaa = document.createElement('a');
 dynaaa.href = 'index.html#works';
 const dynaab = document.createElement('a');
