@@ -54,3 +54,34 @@ dynaab.addEventListener('click', () => {
 dynaac.addEventListener('click', () => {
   overlay.style.display = 'none';
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// contact form client side validation. by Wali muhammad
+
+const form = document.querySelector('.contact');
+const userName = document.querySelector('#name');
+const userMsg = document.querySelector('#message-text');
+const errorMsg = document.querySelector('.mesg');
+const emailRegex = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+const userEmail = document.querySelector('#email');
+
+form.addEventListener('submit', (e) => {
+  if (emailRegex.test(userEmail.value)) {
+    errorMsg.textContent = '';
+  } else {
+    e.preventDefault();
+    errorMsg.textContent = 'Please check typing or case letter';
+  }
+});
