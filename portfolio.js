@@ -167,22 +167,22 @@ for (let i = 0; i < projects.length; i += 1) {
   const dynabutton = document.createElement('a');
   dynabutton.className = 'overlayproject';
   dynabutton.id = 'dynabuttonpro' + projects[i].Code;
-  dynabutton.style.backgroundColor = '#ff6b00'
-  dynabutton.style.padding = '6% 5%'
+  dynabutton.style.backgroundColor = '#ff6b00';
+  dynabutton.style.padding = '6% 5%';
   dynabutton.style.marginLeft = '-5.5%';
-  dynabutton.style.width = '101%'
+  dynabutton.style.width = '101%';
   dynabutton.textContent = 'See Project'
-  dynabutton.style.fontSize = '17px'
-  dynabutton.style.lineHeight = '24px'
-  dynabutton.style.fontWeight = "700"
+  dynabutton.style.fontSize = '17px';
+  dynabutton.style.lineHeight = '24px';
+  dynabutton.style.fontWeight = "700";
   dynadiv.appendChild(dynabutton);
 
   dynabutton.addEventListener('click', () => {
     overlay.style.display = 'grid';
     const dynatitle1 = document.createElement('h1');
     dynatitle1.textContent = projects[i].Name;
-    dynatitle1.id = 'element'
-    overlay.appendChild(dynatitle1)
+    dynatitle1.id = 'element';
+    overlay.appendChild(dynatitle1);
     const dynapara1 = document.createElement('p');
     dynapara1.textContent = projects[i].Description;
     dynapara1.id = 'element'
