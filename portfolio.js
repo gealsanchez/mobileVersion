@@ -138,7 +138,7 @@ dynaac.addEventListener('click', () => {
 });
 
 for (let i = 0 ; i < projects.length ; i += 1) {
-
+  const dynamic=document.querySelector('#dynamic')
   const dynadiv = document.createElement('div');
   dynadiv.style.backgroundImage = 'url(' + "'" + projects[i].FeaturedImage + "'" + ')';
   const dynatitle = document.createElement('h1');
