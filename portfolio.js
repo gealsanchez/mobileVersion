@@ -3,7 +3,7 @@ const projects = [
     Code: '01',
     Name: 'Profesional Art Printing Data',
     Description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    FeaturedImage: 'img/Img Placeholder-2.png',
+    FeaturedImage: 'img/Img Placeholder-3.png',
     Technologies: ['html', 'bootstrap', 'Ruby'],
     Button: ['See live ', 'See source '],
     LiveVersion: '',
@@ -13,7 +13,7 @@ const projects = [
     Code: '02',
     Name: 'Profesional Art Printing Data',
     Description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    FeaturedImage: 'img/Img Placeholder-2.png',
+    FeaturedImage: 'img/Img Placeholder-4.png',
     Technologies: ['html', 'bootstrap', 'Ruby'],
     Button: ['See live ', 'See source '],
     LiveVersion: '',
@@ -23,7 +23,7 @@ const projects = [
     Code: '03',
     Name: 'Profesional Art Printing Data',
     Description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    FeaturedImage: 'img/Img Placeholder-2.png',
+    FeaturedImage: 'img/Img Placeholder-1.png',
     Technologies: ['html', 'bootstrap', 'Ruby'],
     Button: ['See live ', 'See source '],
     LiveVersion: '',
@@ -33,7 +33,7 @@ const projects = [
     Code: '04',
     Name: 'Profesional Art Printing Data',
     Description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    FeaturedImage: 'img/Img Placeholder-2.png',
+    FeaturedImage: 'img/Img Placeholder-3.png',
     Technologies: ['html', 'bootstrap', 'Ruby'],
     Button: ['See live ', 'See source '],
     LiveVersion: '',
@@ -43,7 +43,7 @@ const projects = [
     Code: '05',
     Name: 'Profesional Art Printing Data',
     Description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    FeaturedImage: 'img/Img Placeholder-2.png',
+    FeaturedImage: 'img/Img Placeholder-4.png',
     Technologies: ['html', 'bootstrap', 'Ruby'],
     Button: ['See live ', 'See source '],
     LiveVersion: '',
@@ -53,7 +53,7 @@ const projects = [
     Code: '06',
     Name: 'Profesional Art Printing Data',
     Description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    FeaturedImage: 'img/Img Placeholder-2.png',
+    FeaturedImage: 'img/Img Placeholder-1.png',
     Technologies: ['html', 'bootstrap', 'Ruby'],
     Button: ['See live ', 'See source '],
     LiveVersion: '',
@@ -140,7 +140,7 @@ dynaac.addEventListener('click', () => {
 for (let i = 0; i < projects.length; i += 1) {
   const dynamic = document.querySelector('#dynamic');
   const dynadiv = document.createElement('div');
-  dynadiv.style.backgroundImage = 'url(' + "'" + projects[i].FeaturedImage + "'" + ')';
+  dynadiv.style.backgroundImage = projects[i].FeaturedImage;
   const dynatitle = document.createElement('h1');
   dynatitle.className = 'white-1 crete-f f-weight400 l-height-44 f-size-32';
   dynatitle.textContent = projects[i].Name;
