@@ -156,7 +156,7 @@ for (let i = 0; i < projects.length; i += 1) {
   dynadiv.appendChild(dynapara);
   dynadiv.appendChild(dynaul);
 
-  for (let j = 0; j < 3; j+=1) {
+  for (let j = 0; j < 3; j += 1) {
     const dynaa = document.createElement('a');
     const dynali = document.createElement('li');
     dynali.textContent = projects[i].Technologies[j];
@@ -174,7 +174,7 @@ for (let i = 0; i < projects.length; i += 1) {
   dynabutton.textContent = 'See Project';
   dynabutton.style.fontSize = '17px';
   dynabutton.style.lineHeight = '24px';
-  dynabutton.style.fontWeight = "700";
+  dynabutton.style.fontWeight = '700';
   dynadiv.appendChild(dynabutton);
 
   dynabutton.addEventListener('click', () => {
@@ -185,7 +185,7 @@ for (let i = 0; i < projects.length; i += 1) {
     overlay.appendChild(dynatitle1);
     const dynapara1 = document.createElement('p');
     dynapara1.textContent = projects[i].Description;
-    dynapara1.id = 'element'
+    dynapara1.id = 'element';
     const dynaul1 = document.createElement('ul');
     dynaul1.className = 'dynaulproject';
     const dynaul2 = document.createElement('ul');
@@ -214,7 +214,7 @@ for (let i = 0; i < projects.length; i += 1) {
       dynaa1.appendChild(dynali1);
     }
 
-    for (let j = 0; j < 2; j+=1) {
+    for (let j = 0; j < 2; j += 1) {
       const dynaa2 = document.createElement('a');
       const dynali2 = document.createElement('li');
       dynaa2.className = 'buttonproject';
@@ -223,9 +223,7 @@ for (let i = 0; i < projects.length; i += 1) {
       dynaul2.appendChild(dynaa2);
       dynaa2.appendChild(dynali2);
     }
-
     document.getElementById('buttonproject0').appendChild(imgprobutton1);
     document.getElementById('buttonproject1').appendChild(imgprobutton2);
-
   });
 }
