@@ -786,6 +786,14 @@ footer .social {
   .language ul {
     align-items: flex-start;
   }
+  
+  .projectlist ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
 
   footer .social ul {
     padding: 0%;
@@ -826,14 +834,6 @@ footer .social {
 
   #desktopitem01 p {
     display: none;
-  }
-
-  .projectlist ul {
-    margin: 0%;
-    padding: 0%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
   }
 
   #desktopitem01 ul {
