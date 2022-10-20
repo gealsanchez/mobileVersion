@@ -141,8 +141,9 @@ body {
 }
 
 .navigation img {
-  margin-left: auto;
   filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(78deg) brightness(108%) contrast(100%);
+  margin-left: auto;
+  align-self: center;
 }
 
 .social img:hover {
@@ -165,7 +166,7 @@ p {
   max-width: 1000px;
   background-color: #3c3a39;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2% 5%;
 }
@@ -174,6 +175,10 @@ a {
   color: rgb(248, 246, 246);
   text-decoration: none;
   display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .project-1 a {
@@ -187,9 +192,18 @@ a {
   font-size: 15px;
   line-height: 20px;
   transition: all 0.5s ease-out;
+  text-align: center;
 }
 
-.project a {
+.project-1 ul {
+  list-style: none;
+  margin-top: 5%;
+  display: inline;
+  margin-left: 0%;
+  padding-left: 0;
+}
+
+.projectlist a {
   margin: 3% 0%;
   color: #1c1a19;
   text-decoration: none;
@@ -206,7 +220,7 @@ a:hover {
   background: rgb(43, 43, 156, 0.2);
 }
 
-.buttonproject a {
+.button1 a {
   background-color: #ff6b00;
   margin: 1% 0%;
   text-decoration: none;
@@ -214,7 +228,7 @@ a:hover {
   padding: 2% 4%;
 }
 
-.buttonproject-1 a {
+.button2 a {
   width: 103.1%;
   background-color: #ff6b00;
   margin: 0% 0% -5% -5.5%;
@@ -226,6 +240,14 @@ a:hover {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+.navigation a:hover {
+  letter-spacing: 3px;
+  word-spacing: 0.3em;
+  font-size: 32px;
+  transform: translate(3ch, 3mm);
+  font-family: 'Crete Round', serif;
 }
 
 .desktopmenu ul {
@@ -357,7 +379,7 @@ a:hover {
   justify-content: space-around;
 }
 
-.project ul {
+.projectlist ul {
   margin: 0%;
   padding: 0%;
   list-style: none;
@@ -369,30 +391,24 @@ a:hover {
   padding-bottom: 0%;
 }
 
-.project-1 ul {
-  list-style: none;
-  margin-top: 5%;
-  display: inline;
-}
-
 .project-1 h1 {
   padding-top: 20%;
   margin-bottom: 0%;
 }
 
-.project-2 {
+.projectlist2 {
   margin-bottom: 3%;
 }
 
-.project-2 ul {
+.projectlist2 ul {
   padding: 0%;
 }
 
-.buttonproject a:hover {
+.button1 a:hover {
   background-color: #e05304;
 }
 
-.buttonproject-1 a:hover {
+.button2 a:hover {
   background-color: #e05304;
 }
 
@@ -534,8 +550,85 @@ footer .social {
 }
 
 .dynadiv {
-  height: 30vh;
   background-color: #fff;
+}
+
+.openover {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255, 0.85);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  /* cursor: pointer; */
+  /* Add a pointer on hover */
+  padding: 5%;
+  overflow-y: scroll;
+}
+
+.openover h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #050505;
+  margin: 1%;
+}
+
+.openover p {
+  width: 90%;
+  /* height: 60%; */
+  text-justify: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #050505;
+  margin: 5% 0%;
+}
+
+.openover ul {
+  margin: 4% 0%;
+  padding: 0%;
+  list-style: none;
+  color: #050505;
+}
+
+.openover a {
+  border: 1px solid black;
+  margin-right: 4%;
+  padding: 3% 6%;
+}
+
+.openover li {
+  color: #050505;
+}
+
+.closer img {
+  margin-left: 85%;
+}
+
+.openover .buttonproject {
+  border: none;
+  background-color: #e05304;
+}
+
+.buttonproject li {
+  color: #e9e5e3;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 @media (min-width: 764px) and (max-width: 1368px) {
@@ -673,38 +766,47 @@ footer .social {
     line-height: 28px;
   }
 
-  .project a {
+  .projectlist a {
     margin-right: 3%;
   }
 
-  .webitem-2 .buttonproject-1 {
+  #desktopitem01 h1 {
     display: none;
   }
 
-  .webitem-3 .buttonproject-1 {
+  #desktopitem01 p {
     display: none;
   }
 
-  .webitem-4 .buttonproject-1 {
+  #desktopitem01 ul {
     display: none;
   }
 
-  .webitem-5 .buttonproject-1 {
-    display: none;
+  #desktopitem01 a {
+    margin-top: 117%;
+    height: 5%;
   }
 
-  .webitem-6 .buttonproject-1 {
+  #desktopitem01 {
+    background-image: url("img/Img\ Placeholder-1.png");
+  }
+
+  #dynabuttonpro02,
+  #dynabuttonpro03,
+  #dynabuttonpro04,
+  #dynabuttonpro05,
+  #dynabuttonpro06 {
     display: none;
   }
 
   .works .description,
-  .project,
-  .buttonproject {
+  .projectlist,
+  .button1 {
     padding: 0%;
     margin: 0% 15% 0% 3%;
   }
 
-  .project ul {
+  .projectlist ul {
     justify-content: flex-start;
   }
 
@@ -732,7 +834,7 @@ footer .social {
     padding-left: 5%;
   }
 
-  .about .buttonproject {
+  .about .button1 {
     margin-left: 0%;
     padding-left: 5%;
   }
@@ -749,78 +851,6 @@ footer .social {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-  }
-
-  .desktopversion .webitem-1 .project-1 {
-    background-image: url("img/Img\ Placeholder-1.png");
-    background-size: auto;
-  }
-
-  .desktopversion .webitem-1 p {
-    color: transparent;
-  }
-
-  .webitem-2 h1 {
-    padding-top: 35%;
-  }
-
-  .webitem-3 h1 {
-    padding-top: 35%;
-  }
-
-  .webitem-4 h1 {
-    padding-top: 35%;
-  }
-
-  .webitem-5 h1 {
-    padding-top: 35%;
-  }
-
-  .webitem-6 h1 {
-    padding-top: 35%;
-  }
-
-  .desktopversion .webitem-1 h1 {
-    color: transparent;
-  }
-
-  .desktopversion .webitem-1 .project-2 a {
-    color: transparent;
-    background-color: transparent;
-  }
-
-  .desktopversion .webitem-1 .project-2 li {
-    color: transparent;
-  }
-
-  .desktopversion .webitem-2 .project-1 {
-    background-image: url("img/Img\ Placeholder-2.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-3 .project-1 {
-    background-image: url("img/Img\ Placeholder-3.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-4 .project-1 {
-    background-image: url("img/Img\ Placeholder-4.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-5 .project-1 {
-    background-image: url("img/Img\ Placeholder-2.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-6 .project-1 {
-    background-image: url("img/Img\ Placeholder-3.png");
-    background-size: auto;
-    padding-bottom: 1%;
   }
 
   .about {
@@ -911,5 +941,57 @@ footer .social {
     margin: 1% 0%;
     width: 30%;
     padding-left: 30%;
+  }
+
+  .openover {
+    grid-template-columns: auto auto auto;
+    margin-bottom: 5%;
+  }
+
+  .openover h1 {
+    padding: 0%;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #050505;
+    margin: 1%;
+    grid-column: 1/4;
+  }
+
+  .openover p {
+    width: 70%;
+    text-align: left;
+    margin: 0% 5%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .openover .closer {
+    grid-column: 1/4;
+  }
+
+  .openover .dynaulproject {
+    margin: 0% 0% 2% 0%;
+    grid-column: 1/4;
+  }
+
+  .openover .imageproject {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 4/6;
+    margin-bottom: 45%;
+  }
+
+  .openover .buttonproject {
+    margin: 0% 5%;
+    grid-column: 1/3;
+  }
+
+  .openover a {
+    padding: 1% 5%;
+    margin-right: 1%;
   }
 }
