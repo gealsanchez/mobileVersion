@@ -73,9 +73,9 @@ overlayproject.addEventListener('click', () => {
 
 closer.addEventListener('click', () => {
   overlay.style.display = 'none';
-  const element = document.querySelectorAll('#element')
+  const element = document.querySelectorAll('#element');
 
-  for (let i = 0; i < element.length; i+=1) {
+  for (let i = 0; i < element.length; i += 1) {
     element[i].remove();
   }
 });
@@ -137,8 +137,8 @@ dynaac.addEventListener('click', () => {
   overlaying.style.display = 'none';
 });
 
-for (let i = 0 ; i < projects.length ; i += 1) {
-  const dynamic=document.querySelector('#dynamic')
+for (let i = 0; i < projects.length; i += 1) {
+  const dynamic = document.querySelector('#dynamic');
   const dynadiv = document.createElement('div');
   dynadiv.style.backgroundImage = 'url(' + "'" + projects[i].FeaturedImage + "'" + ')';
   const dynatitle = document.createElement('h1');
@@ -149,7 +149,7 @@ for (let i = 0 ; i < projects.length ; i += 1) {
   dynapara.textContent = 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard';
   const dynaul = document.createElement('ul');
 
-  dynadiv.className = 'project-1'
+  dynadiv.className = 'project-1';
   dynadiv.id = 'desktopitem' + projects[i].Code;
   dynamic.appendChild(dynadiv);
   dynadiv.appendChild(dynatitle);
