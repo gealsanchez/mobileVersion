@@ -166,7 +166,9 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const dynabutton = document.createElement('a');
   dynabutton.className = 'overlayproject';
-  dynabutton.id = 'dynabuttonpro' + projects[i].Code;
+  let strbutton='dynabuttonpro';
+  strbutton += projects[i].Code;
+  dynabutton.id = strbutton;
   dynabutton.style.backgroundColor = '#ff6b00';
   dynabutton.style.padding = '6% 5%';
   dynabutton.style.marginLeft = '-5.5%';
