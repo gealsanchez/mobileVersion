@@ -150,7 +150,7 @@ for (let i = 0; i < projects.length; i += 1) {
   const dynaul = document.createElement('ul');
 
   dynadiv.className = 'project-1';
-  strdeskitem = 'desktopitem';
+  let strdeskitem = 'desktopitem';
   strdeskitem += projects[i].Code;;
   dynadiv.id = strdeskitem; 
   dynamic.appendChild(dynadiv);
@@ -222,7 +222,7 @@ for (let i = 0; i < projects.length; i += 1) {
       const dynaa2 = document.createElement('a');
       const dynali2 = document.createElement('li');
       dynaa2.className = 'buttonproject';
-      strbuttpro = 'buttonproject'
+      let strbuttpro = 'buttonproject'
       strbuttpro += j;
       dynali2.id =  strbuttpro;
       dynali2.textContent = projects[i].Button[j];
