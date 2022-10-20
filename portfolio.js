@@ -171,7 +171,7 @@ for (let i = 0; i < projects.length; i += 1) {
   dynabutton.style.padding = '6% 5%';
   dynabutton.style.marginLeft = '-5.5%';
   dynabutton.style.width = '101%';
-  dynabutton.textContent = 'See Project'
+  dynabutton.textContent = 'See Project';
   dynabutton.style.fontSize = '17px';
   dynabutton.style.lineHeight = '24px';
   dynabutton.style.fontWeight = "700";
@@ -187,16 +187,16 @@ for (let i = 0; i < projects.length; i += 1) {
     dynapara1.textContent = projects[i].Description;
     dynapara1.id = 'element'
     const dynaul1 = document.createElement('ul');
-    dynaul1.className = 'dynaulproject'
+    dynaul1.className = 'dynaulproject';
     const dynaul2 = document.createElement('ul');
-    dynaul1.id = 'element'
-    dynaul2.id = 'element'
+    dynaul1.id = 'element';
+    dynaul2.id = 'element';
     const img1 = document.createElement('img');
     img1.src = projects[i].FeaturedImage;
     img1.id = 'element';
-    img1.className = 'imageproject'
+    img1.className = 'imageproject';
     img1.height = 370;
-    overlay.appendChild(dynaul1);;
+    overlay.appendChild(dynaul1);
     overlay.appendChild(img1);
     overlay.appendChild(dynapara1);
     overlay.appendChild(dynaul2);
@@ -206,10 +206,10 @@ for (let i = 0; i < projects.length; i += 1) {
     const imgprobutton2 = document.createElement('img');
     imgprobutton2.src = 'img/github.svg';
 
-    for (let j = 0; j < 3; j+=1) {
+    for (let j = 0; j < 3; j += 1) {
       const dynaa1 = document.createElement('a');
       const dynali1 = document.createElement('li');
-      dynali1.textContent = projects[i]['Technologies'][j];
+      dynali1.textContent = projects[i].Technologies[j];
       dynaul1.appendChild(dynaa1);
       dynaa1.appendChild(dynali1);
     }
@@ -224,8 +224,8 @@ for (let i = 0; i < projects.length; i += 1) {
       dynaa2.appendChild(dynali2);
     }
 
-    document.getElementById("buttonproject0").appendChild(imgprobutton1);
-    document.getElementById("buttonproject1").appendChild(imgprobutton2);
+    document.getElementById('buttonproject0').appendChild(imgprobutton1);
+    document.getElementById('buttonproject1').appendChild(imgprobutton2);
 
   });
 }
