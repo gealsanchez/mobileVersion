@@ -136,6 +136,10 @@ body {
   color: #1c1a19;
 }
 
+.closer img {
+  margin-left: 85%;
+}
+
 .social img {
   height: 20px;
 }
@@ -240,6 +244,12 @@ a:hover {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+.openover a {
+  border: 1px solid black;
+  margin-right: 4%;
+  padding: 3% 6%;
 }
 
 .navigation a:hover {
@@ -394,12 +404,6 @@ a:hover {
 
 .projectlist2 ul {
   padding: 0%;
-}
-
-.openover a {
-  border: 1px solid black;
-  margin-right: 4%;
-  padding: 3% 6%;
 }
 
 .button1 a:hover {
@@ -596,10 +600,6 @@ footer .social {
   color: #050505;
 }
 
-.closer img {
-  margin-left: 85%;
-}
-
 .openover .buttonproject {
   border: none;
   background-color: #e05304;
@@ -752,6 +752,33 @@ footer .social {
     margin-right: 3%;
   }
 
+  .about p {
+    width: 40%;
+    margin: 0%;
+    padding: 2% 0% 2% 5%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about h1 {
+    margin-bottom: 0%;
+    padding-left: 5%;
+  }
+
+  .contact p {
+    padding: 0%;
+    width: 40%;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .language ul {
+    align-items: flex-start;
+  }
+
   #desktopitem01 h1 {
     display: none;
   }
@@ -811,19 +838,6 @@ footer .social {
     column-gap: 2%;
   }
 
-  .about p {
-    width: 40%;
-    margin: 0%;
-    padding: 2% 0% 2% 5%;
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  .about h1 {
-    margin-bottom: 0%;
-    padding-left: 5%;
-  }
-
   .about .button1 {
     margin-left: 0%;
     padding-left: 5%;
@@ -831,16 +845,6 @@ footer .social {
 
   .language li {
     margin-bottom: 4%;
-  }
-
-  .contact p {
-    padding: 0%;
-    width: 40%;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
   }
 
   .about {
@@ -863,10 +867,6 @@ footer .social {
     margin-bottom: 10%;
     padding-right: 14%;
     padding-left: 9.5%;
-  }
-
-  .language ul {
-    align-items: flex-start;
   }
 
   .flex {
