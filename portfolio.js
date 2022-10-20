@@ -150,7 +150,9 @@ for (let i = 0; i < projects.length; i += 1) {
   const dynaul = document.createElement('ul');
 
   dynadiv.className = 'project-1';
-  dynadiv.id = 'desktopitem' + projects[i].Code;
+  strdeskitem = 'desktopitem';
+  strdeskitem += projects[i].Code;;
+  dynadiv.id = strdeskitem; 
   dynamic.appendChild(dynadiv);
   dynadiv.appendChild(dynatitle);
   dynadiv.appendChild(dynapara);
@@ -166,7 +168,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const dynabutton = document.createElement('a');
   dynabutton.className = 'overlayproject';
-  let strbutton='dynabuttonpro';
+  let strbutton = 'dynabuttonpro';
   strbutton += projects[i].Code;
   dynabutton.id = strbutton;
   dynabutton.style.backgroundColor = '#ff6b00';
@@ -220,7 +222,9 @@ for (let i = 0; i < projects.length; i += 1) {
       const dynaa2 = document.createElement('a');
       const dynali2 = document.createElement('li');
       dynaa2.className = 'buttonproject';
-      dynali2.id = 'buttonproject' + j;
+      strbuttpro = 'buttonproject'
+      strbuttpro += j;
+      dynali2.id =  strbuttpro;
       dynali2.textContent = projects[i].Button[j];
       dynaul2.appendChild(dynaa2);
       dynaa2.appendChild(dynali2);
