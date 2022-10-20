@@ -379,14 +379,6 @@ a:hover {
   justify-content: space-around;
 }
 
-.projectlist ul {
-  margin: 0%;
-  padding: 0%;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
 .webitem {
   padding-bottom: 0%;
 }
@@ -402,6 +394,12 @@ a:hover {
 
 .projectlist2 ul {
   padding: 0%;
+}
+
+.openover a {
+  border: 1px solid black;
+  margin-right: 4%;
+  padding: 3% 6%;
 }
 
 .button1 a:hover {
@@ -555,23 +553,15 @@ footer .social {
 
 .openover {
   position: fixed;
-  /* Sit on top of the page content */
   display: none;
-  /* Hidden by default */
   width: 100%;
-  /* Full width (cover the whole page) */
   height: 100%;
-  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgb(255, 255, 255, 0.85);
-  /* Black background with opacity */
   z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  /* cursor: pointer; */
-  /* Add a pointer on hover */
   padding: 5%;
   overflow-y: scroll;
 }
@@ -587,8 +577,6 @@ footer .social {
 
 .openover p {
   width: 90%;
-  /* height: 60%; */
-  text-justify: center;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -602,12 +590,6 @@ footer .social {
   padding: 0%;
   list-style: none;
   color: #050505;
-}
-
-.openover a {
-  border: 1px solid black;
-  margin-right: 4%;
-  padding: 3% 6%;
 }
 
 .openover li {
@@ -776,6 +758,14 @@ footer .social {
 
   #desktopitem01 p {
     display: none;
+  }
+
+  .projectlist ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
 
   #desktopitem01 ul {
