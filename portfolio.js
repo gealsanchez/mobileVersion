@@ -66,6 +66,7 @@ const projects = [
 const overlayproject = document.querySelector('.overlayproject');
 const overlay = document.querySelector('.openover');
 const closer = document.querySelector('.closer');
+const overlaydiv = document.querySelector('.overlaydiv');
 
 overlayproject.addEventListener('click', () => {
   overlay.style.display = 'grid';
@@ -186,7 +187,7 @@ for (let i = 0; i < projects.length; i += 1) {
     const dynatitle1 = document.createElement('h1');
     dynatitle1.textContent = projects[i].Name;
     dynatitle1.id = 'element';
-    overlay.appendChild(dynatitle1);
+    overlaydiv.appendChild(dynatitle1);
     const dynapara1 = document.createElement('p');
     dynapara1.textContent = projects[i].Description;
     dynapara1.id = 'element';
@@ -200,10 +201,10 @@ for (let i = 0; i < projects.length; i += 1) {
     img1.id = 'element';
     img1.className = 'imageproject';
     img1.height = 370;
-    overlay.appendChild(dynaul1);
-    overlay.appendChild(img1);
-    overlay.appendChild(dynapara1);
-    overlay.appendChild(dynaul2);
+    overlaydiv.appendChild(dynaul1);
+    overlaydiv.appendChild(img1);
+    overlaydiv.appendChild(dynapara1);
+    overlaydiv.appendChild(dynaul2);
 
     const imgprobutton1 = document.createElement('img');
     imgprobutton1.src = 'img/live.svg';

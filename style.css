@@ -246,10 +246,10 @@ a:hover {
   line-height: 24px;
 }
 
-.openover a {
+.overlaydiv a {
   border: 1px solid black;
   margin-right: 4%;
-  padding: 3% 6%;
+  padding: 3% 4%;
 }
 
 .navigation a:hover {
@@ -566,19 +566,19 @@ footer .social {
 .openover {
   position: fixed;
   display: none;
-  width: 100%;
+  width: 90%;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(255, 255, 255, 0.85);
-  z-index: 2;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
   padding: 5%;
   overflow-y: scroll;
 }
 
-.openover h1 {
+.overlaydiv h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -587,7 +587,7 @@ footer .social {
   margin: 1%;
 }
 
-.openover p {
+.overlaydiv p {
   width: 90%;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -597,18 +597,18 @@ footer .social {
   margin: 5% 0%;
 }
 
-.openover ul {
-  margin: 4% 0%;
+.overlaydiv ul {
+  margin: 6% 0% 5% 0%;
   padding: 0%;
   list-style: none;
   color: #050505;
 }
 
-.openover li {
+.overlaydiv li {
   color: #050505;
 }
 
-.openover .buttonproject {
+.overlaydiv .buttonproject {
   border: none;
   background-color: #e05304;
 }
@@ -621,7 +621,40 @@ footer .social {
   line-height: 24px;
 }
 
+.overlaydiv .imageproject {
+  width: 95%;
+}
+
+.testing {
+  position: absolute;
+  filter: blur(8px);
+  opacity: .9;
+  width: 100%;
+  height: 100%; 
+  background-image: url("img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlaydiv {
+  padding: 2% 2% 2% 7%;
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+  .overlaydiv .closer {
+    display: flex;
+    margin-left: auto;
+  }
+
 @media (min-width: 764px) and (max-width: 1368px) {
+
+  .openover {
+    padding-left: 14%;
+  }
+
   .navigation {
     max-width: 1368px;
     padding: 0.5% 2%;
@@ -802,30 +835,41 @@ footer .social {
     flex-wrap: wrap;
   }
 
-  .openover h1 {
+  .overlaydiv{
+    padding: 2%;
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+
+  .overlaydiv h1 {
     padding: 0%;
     font-family: 'Crete Round', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     color: #050505;
-    margin: 1%;
+    margin: 1% 0%;
     grid-column: 1/4;
+    grid-row: 1/2
   }
 
-  .openover p {
-    width: 70%;
+  .overlaydiv p {
+    width: 95%;
     text-align: left;
     margin: 0% 5%;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    grid-column: 3/5;
+    grid-row: 3/7;
   }
 
-  .openover a {
+  .overlaydiv a {
     padding: 1% 5%;
-    margin-right: 1%;
+    margin-right: 5%;
   }
 
   #desktopitem01 h1 {
@@ -963,29 +1007,38 @@ footer .social {
     padding-left: 30%;
   }
 
-  .openover {
-    grid-template-columns: auto auto auto;
+  .overlaydiv {
+    width: 90;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     margin-bottom: 5%;
   }
 
-  .openover .closer {
-    grid-column: 1/4;
+  .overlaydiv .closer {
+    grid-column: 4/5;
+    display: flex;
+    align-self: center;
+    margin-left: 95%;
   }
 
-  .openover .dynaulproject {
+  .overlaydiv .dynaulproject {
     margin: 0% 0% 2% 0%;
-    grid-column: 1/4;
+    grid-column: 1/5;
   }
 
-  .openover .imageproject {
+  .overlaydiv .imageproject {
     width: 100%;
     grid-column: 1/3;
-    grid-row: 4/6;
-    margin-bottom: 45%;
+    grid-row: 3/12;
+    margin-bottom: 0%;
   }
 
-  .openover .buttonproject {
-    margin: 0% 5%;
-    grid-column: 1/3;
+  .overlaydiv .buttonproject {
+    grid-column: 3/5;
+    grid-row: 7/10;
+    margin-top: 33%;
+    margin-left: 9%;
   }
+
 }
