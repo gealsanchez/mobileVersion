@@ -175,7 +175,7 @@ for (let i = 0; i < projects.length; i += 1) {
   dynabutton.style.backgroundColor = '#ff6b00';
   dynabutton.style.padding = '6% 5%';
   dynabutton.style.marginLeft = '-5.5%';
-  dynabutton.style.width = '101%';
+  dynabutton.style.width = '101.3%';
   dynabutton.textContent = 'See Project';
   dynabutton.style.fontSize = '17px';
   dynabutton.style.lineHeight = '24px';

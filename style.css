@@ -644,8 +644,14 @@ footer .social {
 }
 
 .overlaydiv .closer {
+  padding-top: 10%;
+  margin: 0% 10% -10% 0%;
   display: flex;
   margin-left: auto;
+}
+
+.buttonproject img {
+  height: 20px;
 }
 
 @media (min-width: 764px) and (max-width: 1368px) {
@@ -834,7 +840,7 @@ footer .social {
   }
 
   .overlaydiv {
-    padding: 2%;
+    padding: 0.5% 2%;
     width: 80%;
     position: absolute;
     top: 5%;
@@ -1013,7 +1019,8 @@ footer .social {
     grid-column: 4/5;
     display: flex;
     align-self: center;
-    margin-left: 95%;
+    margin-left: 85%;
+    margin-top: -15%;
   }
 
   .overlaydiv .dynaulproject {
@@ -1033,5 +1040,10 @@ footer .social {
     grid-row: 7/10;
     margin-top: 33%;
     margin-left: 9%;
+    margin-right: 0%;
+  }
+
+  .buttonproject img {
+    height: 20px;
   }
 }
