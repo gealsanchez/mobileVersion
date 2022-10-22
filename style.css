@@ -150,6 +150,10 @@ body {
   align-self: center;
 }
 
+.buttonproject img {
+  height: 20px;
+}
+
 .social img:hover {
   transform: scale(1.2);
 }
@@ -648,10 +652,6 @@ footer .social {
   margin: 0% 10% -10% 0%;
   display: flex;
   margin-left: auto;
-}
-
-.buttonproject img {
-  height: 20px;
 }
 
 @media (min-width: 764px) and (max-width: 1368px) {
