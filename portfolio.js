@@ -61,8 +61,6 @@ const projects = [
   },
 ];
 
-// const dynamic = document.querySelector('.dynamic');
-
 const overlayproject = document.querySelector('.overlayproject');
 const overlay = document.querySelector('.openover');
 const closer = document.querySelector('.closer');
