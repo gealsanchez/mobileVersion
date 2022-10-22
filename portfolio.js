@@ -236,8 +236,6 @@ for (let i = 0; i < projects.length; i += 1) {
 // contact form client side validation. by Wali muhammad
 
 const form = document.querySelector('.contact');
-const userName = document.querySelector('#name');
-const userMsg = document.querySelector('#message-text');
 const errorMsg = document.querySelector('.msg');
 const emailRegex = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 const userEmail = document.querySelector('#email');
