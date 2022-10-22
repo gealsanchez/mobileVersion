@@ -136,13 +136,22 @@ body {
   color: #1c1a19;
 }
 
+.closer img {
+  margin-left: 85%;
+}
+
 .social img {
   height: 20px;
 }
 
 .navigation img {
-  margin-left: auto;
   filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(78deg) brightness(108%) contrast(100%);
+  margin-left: auto;
+  align-self: center;
+}
+
+.buttonproject img {
+  height: 20px;
 }
 
 .social img:hover {
@@ -165,7 +174,7 @@ p {
   max-width: 1000px;
   background-color: #3c3a39;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2% 5%;
 }
@@ -174,6 +183,10 @@ a {
   color: rgb(248, 246, 246);
   text-decoration: none;
   display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .project-1 a {
@@ -187,9 +200,18 @@ a {
   font-size: 15px;
   line-height: 20px;
   transition: all 0.5s ease-out;
+  text-align: center;
 }
 
-.project a {
+.project-1 ul {
+  list-style: none;
+  margin-top: 5%;
+  display: inline;
+  margin-left: 0%;
+  padding-left: 0;
+}
+
+.projectlist a {
   margin: 3% 0%;
   color: #1c1a19;
   text-decoration: none;
@@ -206,7 +228,7 @@ a:hover {
   background: rgb(43, 43, 156, 0.2);
 }
 
-.buttonproject a {
+.button1 a {
   background-color: #ff6b00;
   margin: 1% 0%;
   text-decoration: none;
@@ -214,7 +236,7 @@ a:hover {
   padding: 2% 4%;
 }
 
-.buttonproject-1 a {
+.button2 a {
   width: 103.1%;
   background-color: #ff6b00;
   margin: 0% 0% -5% -5.5%;
@@ -226,6 +248,20 @@ a:hover {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+.overlaydiv a {
+  border: 1px solid black;
+  margin-right: 4%;
+  padding: 3% 4%;
+}
+
+.navigation a:hover {
+  letter-spacing: 3px;
+  word-spacing: 0.3em;
+  font-size: 32px;
+  transform: translate(3ch, 3mm);
+  font-family: 'Crete Round', serif;
 }
 
 .desktopmenu ul {
@@ -271,6 +307,14 @@ a:hover {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
+}
+
+.projectlist ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-1 {
@@ -357,22 +401,8 @@ a:hover {
   justify-content: space-around;
 }
 
-.project ul {
-  margin: 0%;
-  padding: 0%;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
 .webitem {
   padding-bottom: 0%;
-}
-
-.project-1 ul {
-  list-style: none;
-  margin-top: 5%;
-  display: inline;
 }
 
 .project-1 h1 {
@@ -380,19 +410,19 @@ a:hover {
   margin-bottom: 0%;
 }
 
-.project-2 {
+.projectlist2 {
   margin-bottom: 3%;
 }
 
-.project-2 ul {
+.projectlist2 ul {
   padding: 0%;
 }
 
-.buttonproject a:hover {
+.button1 a:hover {
   background-color: #e05304;
 }
 
-.buttonproject-1 a:hover {
+.button2 a:hover {
   background-color: #e05304;
 }
 
@@ -534,11 +564,101 @@ footer .social {
 }
 
 .dynadiv {
-  height: 30vh;
   background-color: #fff;
 }
 
+.openover {
+  position: fixed;
+  display: none;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+  overflow-y: scroll;
+}
+
+.overlaydiv h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #050505;
+  margin: 1%;
+}
+
+.overlaydiv p {
+  width: 90%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #050505;
+  margin: 5% 0%;
+}
+
+.overlaydiv ul {
+  margin: 6% 0% 5% 0%;
+  padding: 0%;
+  list-style: none;
+  color: #050505;
+}
+
+.overlaydiv li {
+  color: #050505;
+}
+
+.overlaydiv .buttonproject {
+  border: none;
+  background-color: #e05304;
+}
+
+.buttonproject li {
+  color: #e9e5e3;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.overlaydiv .imageproject {
+  width: 95%;
+}
+
+.testing {
+  position: absolute;
+  filter: blur(8px);
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlaydiv {
+  padding: 2% 2% 2% 7%;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.overlaydiv .closer {
+  padding-top: 10%;
+  margin: 0% 10% -10% 0%;
+  display: flex;
+  margin-left: auto;
+}
+
 @media (min-width: 764px) and (max-width: 1368px) {
+  .openover {
+    padding-left: 14%;
+  }
+
   .navigation {
     max-width: 1368px;
     padding: 0.5% 2%;
@@ -673,50 +793,8 @@ footer .social {
     line-height: 28px;
   }
 
-  .project a {
+  .projectlist a {
     margin-right: 3%;
-  }
-
-  .webitem-2 .buttonproject-1 {
-    display: none;
-  }
-
-  .webitem-3 .buttonproject-1 {
-    display: none;
-  }
-
-  .webitem-4 .buttonproject-1 {
-    display: none;
-  }
-
-  .webitem-5 .buttonproject-1 {
-    display: none;
-  }
-
-  .webitem-6 .buttonproject-1 {
-    display: none;
-  }
-
-  .works .description,
-  .project,
-  .buttonproject {
-    padding: 0%;
-    margin: 0% 15% 0% 3%;
-  }
-
-  .project ul {
-    justify-content: flex-start;
-  }
-
-  .desktopversion {
-    max-width: 1368px;
-    padding: 0% 5%;
-    margin: 0% 5% 5% 5%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    row-gap: 2%;
-    column-gap: 2%;
   }
 
   .about p {
@@ -732,15 +810,6 @@ footer .social {
     padding-left: 5%;
   }
 
-  .about .buttonproject {
-    margin-left: 0%;
-    padding-left: 5%;
-  }
-
-  .language li {
-    margin-bottom: 4%;
-  }
-
   .contact p {
     padding: 0%;
     width: 40%;
@@ -751,76 +820,120 @@ footer .social {
     line-height: 52px;
   }
 
-  .desktopversion .webitem-1 .project-1 {
+  .language ul {
+    align-items: flex-start;
+  }
+
+  .projectlist ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .social ul {
+    padding: 0%;
+    margin: 0%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .overlaydiv {
+    padding: 0.5% 2%;
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 5%;
+  }
+
+  .overlaydiv h1 {
+    padding: 0%;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #050505;
+    margin: 1% 0%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .overlaydiv p {
+    width: 95%;
+    text-align: left;
+    margin: 0% 5%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    grid-column: 3/5;
+    grid-row: 3/7;
+  }
+
+  .overlaydiv a {
+    padding: 1% 5%;
+    margin-right: 5%;
+  }
+
+  #desktopitem01 h1 {
+    display: none;
+  }
+
+  #desktopitem01 p {
+    display: none;
+  }
+
+  #desktopitem01 ul {
+    display: none;
+  }
+
+  #desktopitem01 a {
+    margin-top: 117%;
+    height: 5%;
+  }
+
+  #desktopitem01 {
     background-image: url("img/Img\ Placeholder-1.png");
-    background-size: auto;
   }
 
-  .desktopversion .webitem-1 p {
-    color: transparent;
+  #dynabuttonpro02,
+  #dynabuttonpro03,
+  #dynabuttonpro04,
+  #dynabuttonpro05,
+  #dynabuttonpro06 {
+    display: none;
   }
 
-  .webitem-2 h1 {
-    padding-top: 35%;
+  .works .description,
+  .projectlist,
+  .button1 {
+    padding: 0%;
+    margin: 0% 15% 0% 3%;
   }
 
-  .webitem-3 h1 {
-    padding-top: 35%;
+  .desktopversion {
+    max-width: 1368px;
+    padding: 0% 5%;
+    margin: 0% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 2%;
+    column-gap: 2%;
   }
 
-  .webitem-4 h1 {
-    padding-top: 35%;
+  .about .button1 {
+    margin-left: 0%;
+    padding-left: 5%;
   }
 
-  .webitem-5 h1 {
-    padding-top: 35%;
-  }
-
-  .webitem-6 h1 {
-    padding-top: 35%;
-  }
-
-  .desktopversion .webitem-1 h1 {
-    color: transparent;
-  }
-
-  .desktopversion .webitem-1 .project-2 a {
-    color: transparent;
-    background-color: transparent;
-  }
-
-  .desktopversion .webitem-1 .project-2 li {
-    color: transparent;
-  }
-
-  .desktopversion .webitem-2 .project-1 {
-    background-image: url("img/Img\ Placeholder-2.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-3 .project-1 {
-    background-image: url("img/Img\ Placeholder-3.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-4 .project-1 {
-    background-image: url("img/Img\ Placeholder-4.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-5 .project-1 {
-    background-image: url("img/Img\ Placeholder-2.png");
-    background-size: auto;
-    padding-bottom: 1%;
-  }
-
-  .desktopversion .webitem-6 .project-1 {
-    background-image: url("img/Img\ Placeholder-3.png");
-    background-size: auto;
-    padding-bottom: 1%;
+  .language li {
+    margin-bottom: 4%;
   }
 
   .about {
@@ -843,10 +956,6 @@ footer .social {
     margin-bottom: 10%;
     padding-right: 14%;
     padding-left: 9.5%;
-  }
-
-  .language ul {
-    align-items: flex-start;
   }
 
   .flex {
@@ -885,13 +994,6 @@ footer .social {
     align-self: flex-start;
   }
 
-  footer .social ul {
-    padding: 0%;
-    margin: 0%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .rule-4 {
     background: transparent;
     border: transparent;
@@ -911,5 +1013,37 @@ footer .social {
     margin: 1% 0%;
     width: 30%;
     padding-left: 30%;
+  }
+
+  .overlaydiv .closer {
+    grid-column: 4/5;
+    display: flex;
+    align-self: center;
+    margin-left: 85%;
+    margin-top: -15%;
+  }
+
+  .overlaydiv .dynaulproject {
+    margin: 0% 0% 2% 0%;
+    grid-column: 1/5;
+  }
+
+  .overlaydiv .imageproject {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 3/12;
+    margin-bottom: 0%;
+  }
+
+  .overlaydiv .buttonproject {
+    grid-column: 3/5;
+    grid-row: 7/10;
+    margin-top: 33%;
+    margin-left: 9%;
+    margin-right: 0%;
+  }
+
+  .buttonproject img {
+    height: 20px;
   }
 }
